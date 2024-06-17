@@ -269,13 +269,13 @@
         <tr>
           <td>35</td>
             <td><a href="https://www.lingohut.com/en/v771521/arabic-lessons-family-members">family-members</a></td>
-            <td> </td>
+            <td>Rabib(RAC) </td>
             <td> </td>
           </tr>
           <tr>
             <td>36</td>
             <td><a href="https://www.lingohut.com/en/v771522/arabic-lessons-extended-family-members">extended-family-members</a></td>
-            <td> </td>
+            <td>Rabib(RAC) </td>
             <td> </td>
           </tr>
           <tr>
@@ -1350,12 +1350,59 @@
   </table>
 </div>
 
+
+
+
+
+
+<!-- =========password======== -->
+
+<script>
+    function checkPassword() {
+        var password = document.getElementById("password").value;
+        if (password === "1") {
+            document.getElementById("protected-content").style.display = "block";
+            document.getElementById("password-form").style.display = "none";
+        } else {
+            alert("Incorrect password. Please try again.");
+        }
+    }
+  </script>
+  
+  
+  
+  
+  <style>
+    #protected-content {
+        display: none;
+    }
+  </style>
+  
+  
+  </head>
+  
+  
+  
+  
+  
+  
+  
+  <body>
+  <div id="password-form">
+    <h2>Please enter the password to access this page:</h2>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+  <div id="protected-content">
+    <h2>Protected Content</h2>
+    <p>This content is protected by a password.</p>
+  </div>
+  
+<!-- =========password======== -->
+
 </body>
 </html>
 
 
 
 
-
-</body>
-</html>
